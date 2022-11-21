@@ -73,9 +73,29 @@ li .dropdown button{
 .dropdown-menu li{
   min-width: auto !important ;
 }
-.dropdown-item:hover{
- background: #2d74ff !important ;
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a{
+  color: #2d74ff
 }
+.navbar .dropdown ul li .dropdown-item:hover
+{
+  background-color: #2d74ff !important;
+  color: white;
+}
+.contact .info p,.contact .info h4{
+  padding:  0 0 0 20px;
+}
+.features .icon-box h4,.features .icon-box p{
+  margin-left: 1rem;
+}
+.services .icon-box h4 a:hover,#hero .icon-box h3 a:hover{
+  background: none ;
+  color: #2d74ff;
+}
+
+
+
+
+
 
 
 
@@ -96,6 +116,10 @@ li .dropdown button{
   .features_txt{
     order: 2 !important;
   }
+  a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
+    background-color: #2d74ff;
+    color: white !important;
+}
 }
 </style>
 
@@ -151,38 +175,38 @@ li .dropdown button{
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-store-line"></i>
-            <h3><a href="">Design and development of electronic systems</a></h3>
+            <h3><a >Design and development of electronic systems</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">Data analysis and evaluation </a></h3>
+            <h3><a >Data analysis and evaluation </a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">Providing advice on technical problems</a></h3>
+            <h3><a >Providing advice on technical problems</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-paint-brush-line"></i>
-            <h3><a href="">Data protection and preservation from any danger</a></h3>
+            <h3><a >Data protection and preservation from any danger</a></h3>
           </div>
         </div>
       
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-database-2-line"></i>
-            <h3><a href="">Providing technical support for our services </a></h3>
+            <h3><a >Providing technical support for our services </a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-database-2-line"></i>
-            <h3><a href=""> Convert paper systems to electronic systems </a></h3>
+            <h3><a > Convert paper systems to electronic systems </a></h3>
           </div>
         </div>
       </div>
@@ -263,38 +287,38 @@ The present, and from the standpoint of (has no past, has no present)
           <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Automation of security and commercial work to serve the community  </a></h4>
+              <h4><a >Automation of security and commercial work to serve the community  </a></h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="ri-database-2-line"></i></div>
-              <h4><a href="">Abolishing the paper archiving system and replacing it with an electronic archiving system  </a></h4>
+              <h4><a >Abolishing the paper archiving system and replacing it with an electronic archiving system  </a></h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Accommodate more customers at one time </a></h4>
+              <h4><a >Accommodate more customers at one time </a></h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="ri-calendar-todo-line"></i></div>
-              <h4><a href="">    Reducing the cost of administrative procedures and related matters </a></h4>
+              <h4><a >    Reducing the cost of administrative procedures and related matters </a></h4>
             </div>
           </div>
           <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="ri-store-line"></i></div>
-              <h4><a href="">    Increasing the efficiency of the administration’s work through its dealings with citizens, companies and institutions</a></h4>
+              <h4><a >    Increasing the efficiency of the administration’s work through its dealings with citizens, companies and institutions</a></h4>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Data analysis and evaluation  </a></h4>
+              <h4><a >Data analysis and evaluation  </a></h4>
             </div>
           </div>
 
@@ -537,22 +561,22 @@ The present, and from the standpoint of (has no past, has no present)
           <div class="col-lg-4" >
             <div class="info">
               <div class="address flex">
+                <i class="bi bi-geo-alt"></i>
                 <div class=" rtl" style="margin-right: 1rem;"> <h4>Location:</h4>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
-                <i class="bi bi-geo-alt"></i>
               </div>
               <div class="email flex">
+                <i class="bi bi-envelope"></i>
                 <div class=" rtl" style="margin-right: 1rem;"> <h4>Email:</h4>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
-                <i class="bi bi-envelope"></i>
               </div>
               <div class="phone flex">
+                <i class="bi bi-phone"></i>
                 <div class=" rtl" style="margin-right: 1rem;"> <h4>Call:</h4>
                   <p>A108 Adam Street, New York, NY 535022</p>
                 </div>
-                <i class="bi bi-phone"></i>
               </div>
 
             </div>
