@@ -22,10 +22,10 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+<!--   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ -->  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<!--   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+ -->  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap" rel="stylesheet">
@@ -233,7 +233,7 @@ li .dropdown button{
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/about.jpg" class="img-fluid" loading="lazy" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2  content" data-aos="fade-right" data-aos-delay="100">
             <h3 class="rtl h4-f">من نحن:</h3>
@@ -359,18 +359,18 @@ li .dropdown button{
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
+            <!-- <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
               <li data-filter=".filter-web">Web</li>
-            </ul>
+            </ul> -->
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
           
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap text-center bg-white" >
               <img src="assets/img/portfolio/الشرطة.png" style="background-color:white" class="img-fluid" width="256px" alt="">
               <div class="portfolio-info">
@@ -383,9 +383,23 @@ li .dropdown button{
               </div>      
             </div>
             <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details1.html">تفاصيل النظام</a> </button>
+          </div> -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap text-center bg-white" >
+              <img src="assets/img/portfolio/الشرطة.png" style="background-color:white" class="img-fluid" width="256px" alt="">
+              <div class="portfolio-info">
+                <h4>التجنيد</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>      
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details1.html">تفاصيل النظام</a> </button>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+         <!--  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap text-center bg-white">
               <img src="assets/img/portfolio/الفنادق.png" style="background-color:white;width: 16rem;
               padding: 1rem;" class="img-fluid" alt="">
@@ -400,13 +414,13 @@ li .dropdown button{
             </div>
             <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details2.html">تفاصيل النظام</a> </button>
 
-          </div>
+          </div> -->
 
           
 
         
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap text-center bg-white">
               <img src="assets/img/portfolio/هيئة النقل.png" style="background-color:white" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -420,22 +434,11 @@ li .dropdown button{
             </div>
             <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details1.html">تفاصيل النظام</a> </button>
 
-          </div>
-
-          
-
-          
-
-       
-
-          
-
+          </div> -->
         </div>
 
       </div>
     </section><!-- End Portfolio Section -->
-
-   
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -451,11 +454,6 @@ li .dropdown button{
                
               </div>
             </div><!-- End testimonial item -->
-
-           
-
-           
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/حلول تقنية متميزة.png" class="testimonial-img" alt="">
