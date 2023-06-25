@@ -134,20 +134,20 @@
                             required
                         />
                         <BaseInput 
-                            v-model="formdata.phone"
+                            v-model="phone"
                             type="text"
-                            label=" رقم الهاتف الاساسي"
+                            label=" رقم الهاتف "
                             :error="err.phone"
-                            maxlength="13"
+                            maxlength="9"
                             required
                         />
-                        <BaseInput 
+                       <!--  <BaseInput 
                             v-model="formdata.phone_1"
                             type="text"
                             label=" رقم الهاتف الثانوي"
                             maxlength="13"
                             :error="err.phone_1"
-                        />
+                        /> -->
                         <SelectInput 
                         v-model="gov"
                         label="  المحافظة "
@@ -226,6 +226,7 @@ const formdata = ref({
     phone_1:'',
     directorate:'',
 })
+const phone = ref('')
 const err = ref({
     first_name: null,
     second_name: null,
@@ -260,6 +261,9 @@ const filevalue3 = (file)=>{
 const load = ref(false)
 const msgQuery = ref(null)
 const submit = async ()=>{
+    formdata.value.phone = '+967'
+    formdata.value.phone = formdata.value.phone + phone.value
+    console.log(formdata.value.phone)
     load.value = true
      err.value = {
     first_name: null,
