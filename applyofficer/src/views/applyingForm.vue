@@ -20,8 +20,7 @@
             <img src="../assets/logoo.jpg" alt="" width="200">
             <div class="text-center">
                 <img src="../assets/logo1.jpg" alt="" width="100">
-                <p >إدارة أمن وشرطة الوادي والصحراء</p>
-                <p > م / حضرموت</p>
+                <img src="../assets/logo2.jpg" alt="" width="120">
             </div>
         </div>
         <h3 class="text-center mt-3" >تقديم طلب تجنيد</h3 >
@@ -119,23 +118,33 @@
                             @filevalue="filevalue3"
                             label="الشهادة للمستوى التعليمي"
                             :error="err.education_docm"
+                            required
                         />
                         <BaseInput 
                             v-model="formdata.phone"
                             type="text"
                             label=" رقم الهاتف الاساسي"
                             :error="err.phone"
+                            maxlength="13"
                             required
                         />
                         <BaseInput 
                             v-model="formdata.phone_1"
                             type="text"
                             label=" رقم الهاتف الثانوي"
+                            maxlength="13"
                             :error="err.phone_1"
                         />
                         <SelectInput 
+                        v-model="formdata.gov"
+                        label="  المحافظة "
+                        :error="err.gov"
+                        :list="govs"
+                        required
+                        />
+                        <SelectInput 
                         v-model="formdata.directorate"
-                        label=" مكان الاقامة "
+                        label="  المديرية "
                         :error="err.directorate"
                         :list="directorates"
                         required
@@ -170,6 +179,8 @@ import {usePostMultipart} from '../composables/usePostMultipart'
 import {useGet} from '../composables/useGet'
 import looading from '../components/looading.vue'
 onMounted(async ()=>{
+    const govss = await useGet('provinec/')
+  govs.value = govss.awaitdata.value
     const {awaitdata,awaiterror} = await useGet('directorate/')
   directorates.value = awaitdata.value
 
@@ -189,9 +200,10 @@ const formdata = ref({
     gender: '',
     blood: '',
     singl: '',
-    phone:'+967',
-    phone_1:'+967',
+    phone: '+967',
+    phone_1:'',
     directorate:'',
+    gov:'',
 })
 const err = ref({
     first_name: null,
@@ -211,8 +223,10 @@ const err = ref({
     phone:null,
     phone_1:null,
     directorate:null,
+    gov:null,
 })
 const directorates = ref(null)
+const govs = ref(null)
 const filevalue = (file)=>{
             formdata.value.imge = file;
                           }   
@@ -244,6 +258,8 @@ const submit = async ()=>{
     phone:null,
     phone_1:null,
     directorate:null,
+    gov:null,
+
 }
 const {awaitdata,awaiterror,loading} = await usePostMultipart("jobcreate",formdata.value)
       load.value = loading.value

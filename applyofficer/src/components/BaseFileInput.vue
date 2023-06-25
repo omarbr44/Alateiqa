@@ -4,7 +4,7 @@
                             <div class="alert alert-danger" role="alert">{{ error }}</div>
                             </div>
                             <label  class="form-label">{{ label }}</label>
-                             <input  type="file" class="form-control rtl" ref="file" multiple
+                             <input maxlength="13"  type="file" class="form-control rtl" ref="file" multiple
                              @change="$emit('filevalue',$event.target.files[0])"
                              v-bind="$attrs">
      </div>
