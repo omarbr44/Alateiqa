@@ -1,14 +1,578 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue</title>
-    <script type="module" crossorigin src="/assets/index-17c97965.js"></script>
-    <link rel="stylesheet" href="/assets/index-ab741693.css">
-  </head>
-  <body>
-    <div id="app"></div>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Alatiqa</title>
+  <meta content="نحن أفراد قاموا بعمل مؤسسة من أجل تقديم المساعدة في الجانب الحكومي و التجاري 
+  من خلال خبراتھم في الجانب التقني ، للمساهمة لخلق بيئة ملائمة لدفع عجلة التنمية
+    و الارتقاء بالمؤسسات الحكومية والتجارية والاخذ بيد المنشئات التي نقدم لها خدماتنا  
+  للوصول بها لمصافي المنشئات الكبرى محليا و اقلميا  " name="description">
+  <meta content="Alatiqa, alatiqa, atiqa, program, Tech, العتيقة ,عتيقة" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/aleatiqa_ Branding.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<!--   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+ -->  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+<!--   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+ -->  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Gp - v4.8.1
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+  body,h1,h2,h3,h4,h5,a,p{
+    font-family: 'Noto Sans Arabic', sans-serif !important;
+  }
+  i,.active, #hero .icon-box h3 a:hover,.services .icon-box h4 a:hover,#preloader{
+    color: #2d74ff !important;
+  }
+  .services .icon-box .icon i,.contact .info i,.contact .php-email-form button[type=submit],.back-to-top i,.portfolio #portfolio-flters li.filter-active
+  ,.portfolio #portfolio-flters li:hover{
+    color: #fff !important;
+  }
+  #preloader:before {
+    border: 6px solid #2d74ff;
+    border-top-color: #151515;
+    border-bottom-color: #151515;
+}
+  #hero .icon-box:hover {
+    border-color: #2d74ff;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover>a {
+    color: #2d74ff;
+}
+
+.services .icon-box h4 a:hover,#hero .icon-box h3 a:hover{
+  background: none ;
+  color: #2d74ff;
+}
+
+
+.services .icon-box .icon,.contact .info i,.contact .php-email-form button[type=submit],.back-to-top.active,.portfolio #portfolio-flters li.filter-active,
+.portfolio #portfolio-flters li:hover{
+  background: #2d74ff;
+}
+
+li .dropdown button{
+  margin: 10px 0 10px 30px;
+    background: none !important;
+    color: white;
+}
+.dropdown-menu{
+  width: 50%;
+}
+.dropdown-menu li{
+  min-width: auto !important ;
+}
+.navbar .dropdown ul li .dropdown-item:hover{
+  background-color: #2d74ff !important;
+  color: white;
+}
+
+#hero h1{
+  line-height: 85px;
+  font-size: 85px;
+}
+
+
+
+.rtl{
+  direction: rtl;
+}
+.h4-f{
+  font-size: 2.6rem !important;
+}
+.p-f{
+  font-size: 1.4rem !important;
+}
+.flex{
+  display: flex;
+}
+.info{
+  display: flex;
+    flex-direction: column;
+    align-items: flex-end; 
+}
+.testimonials .testimonial-item .testimonial-img{
+  border: 6px solid #0057ff;
+}
+@media(max-width: 990px){
+  #hero h1{
+  font-size: 54px;
+}
+  .info{
+    margin-top: 2rem;
+      
+  }
+  .features_txt{
+    order: 2 !important;
+  }
+  a:hover, .navbar-mobile .active, .navbar-mobile li:hover>a {
+    background-color: #2d74ff;
+    color: white !important;
+}
+  
+}
+</style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+     <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Gp<span>.</span></a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+       <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/aleatiqa_1 Branding.png" alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">الصفحة الرئيسية</a></li>
+          <li><a class="nav-link scrollto" href="#about">عن العتيقة</a></li>
+          <li><a class="nav-link scrollto" href="#services">اهدافنا</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">اعمالنا</a></li>          
+          <li><a class="nav-link scrollto" href="#contact">للتواصل</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              العربية
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">العربية</a></li>
+              <li><a class="dropdown-item" href="index_en.html">الانجليزية</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-6 col-lg-8">
+          <h1> العمل العتيق</h1>
+        </div>
+      </div>
+
+      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i ><img src="assets/img/تصمیم_وتطویر_الأنظمة_البرمجية.png" width="40px" height="40px"></i>
+            <h3><a>تصمیم وتطویر الأنظمة البرمجية </a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i ><img src="assets/img/تحليل_البينات.png" width="40px" height="40px"></i>
+            <h3><a >تحلیل البیانات وتقییمھا  </a></h3>
+          </div>
+        </div>
+        
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i ><img src="assets/img/حماية_البيانات.png" width="40px" height="40px"></i>
+            <h3><a >حمایة البیانات والحفاظ علیھا </a></h3>
+          </div>
+        </div>
+      
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i ><img src="assets/img/الدعم_الفني.png" width="40px" height="40px"></i>
+            <h3><a > الدعم الفني  والاستشارة التقنية </a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i ><img src="assets/img/صيانة.png" width="40px" height="40px"></i>
+            <h3><a > صيانة الاجهزة الالكترونية </a></h3>
+          </div>
+        </div>
+        <div class="col-xl-2 col-md-4">
+          <div class="icon-box">
+            <i ><img src="assets/img/تركيب_كاميرات.png" width="40px" height="40px"></i>
+            <h3><a > تركيب كاميرات المراقبة وصيانتها  </a></h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" loading="lazy" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2  content" data-aos="fade-right" data-aos-delay="100">
+            <h3 class="rtl h4-f">من نحن:</h3>
+            <p class="fst-italic rtl p-f">
+              نحن أفراد قاموا بعمل مؤسسة من أجل تقديم المساعدة في الجانب الحكومي و التجاري 
+من خلال خبراتھم في الجانب التقني ، للمساهمة لخلق بيئة ملائمة لدفع عجلة التنمية
+  و الارتقاء بالمؤسسات الحكومية والتجارية والاخذ بيد المنشئات التي نقدم لها خدماتنا  
+للوصول بها لمصافي المنشئات الكبرى محليا و اقلميا             </p>
+           
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+ 
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 features_txt" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0 rtl flex" data-aos="zoom-in" data-aos-delay="150">
+             <div style="order: 1;
+             margin-right: 1rem;"> <h4 class="h4-f">شعارنا  </h4>
+              <p class="p-f" style="margin-left: 0;"> العمل العتيق</p> </div>
+                <i class="" style="font-size: 40px;"><img src="assets/img/شعارنا.png" width="50px" height="50px"></i> 
+              </div>
+              <div class="icon-box mt-5 mt-lg-0 rtl flex" data-aos="zoom-in" data-aos-delay="150">
+                <div style="order: 1;
+             margin-right: 1rem;"> <h4 class="h4-f">قيمنا  </h4>
+              <p class="p-f" style="margin-left: 0;">  الجودة - الاحترافية - الأمان - المسؤولية - الابداع  </p> </div>
+              <i class="" style="font-size: 40px;"><img src="assets/img/قيمنا.png" width="50px" height="50px"></i> 
+            </div>
+            <div class="icon-box mt-5 mt-lg-0 rtl flex" data-aos="zoom-in" data-aos-delay="150">
+              <div style="order: 1;
+             margin-right: 1rem;"> <h4 class="h4-f">رؤيتنا  </h4>
+              <p class="p-f" style="margin-left: 0;">  الشريك الذي تثق به في تقديم الخدمات التقنية</p> </div>
+              <i class="" style="font-size: 40px;"><img src="assets/img/الرؤية.png" width="50px" height="50px"></i> 
+            </div>
+            <div class="icon-box mt-5 mt-lg-0 rtl flex" data-aos="zoom-in" data-aos-delay="150">
+              <div style="order: 1;
+             margin-right: 1rem;"> <h4 class="h4-f">الرسالة  </h4>
+              <p class="p-f" style="margin-left: 0;"> تقديم الخدمات التقنية بمعايير عالمية وجودة عالية</p> </div>
+              <i class="" style="font-size: 40px;"><img src="assets/img/الرسالة.png" width="50px" height="50px"></i> 
+            </div>
+          
+          
+         
+          </div>
+          <div class="image col-lg-6" style='background-image: url("assets/img/about1.jpg");' data-aos="fade-right"></div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title rtl">
+          <h2>اهدافنا</h2>
+          <p> اهداف المؤسسة </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/اتمتتة عمل المنشئات.png" width="32px" height="32px"></div>
+              <h4><a>أتمتة عمل المنشئات لخدمة المجتمع  </a></h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/تطوير نظام الارشيف.png" width="32px" height="32px"></div>
+              <h4><a>تطوير نظام الأرشیف الورقي  الى ارشيف الكتروني  </a></h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/رفع مستوى الجودة.png" width="32px" height="32px"></div>
+              <h4><a>رفع مستوى جودة تقديم خدمات المنشئات محليا واقليميا</a></h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/تقلیل كلفة الإجراءات الإداریة.png" width="32px" height="32px"></div>
+              <h4><a>    تقلیل كلفة الإجراءات الإداریة وما یتعلق بھا </a></h4>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6  align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/ألمساهمة في تقديم خدمات الكترونية.png" width="32px" height="32px"></div>
+              <h4><a>  المساهمة في تقديم الخدمات الالكترونية بمعايير عالمية  </a></h4>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6  align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><img src="assets/img/تحليل البيانات و تقييمها.png" width="32px" height="32px"></div>
+              <h4><a href="">تحلیل البیانات وتقییمھا  </a></h4>
+            </div>
+          </div>
+
+       
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+  
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title rtl">
+          <h2>اعمالنا</h2>
+          <p> اعمال المؤسسة </p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <!-- <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul> -->
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap text-center bg-white" >
+              <img src="assets/img/portfolio/الشرطة.png" style="background-color:white" class="img-fluid" width="256px" alt="">
+              <div class="portfolio-info">
+                <h4>نجده وطن</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>      
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details1.html">تفاصيل النظام</a> </button>
+          </div> -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap text-center bg-white" >
+              <img src="assets/img/portfolio/الشرطة.png" style="background-color:white" class="img-fluid" width="256px" alt="">
+              <div class="portfolio-info">
+                <h4>التجنيد</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/app1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details3.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>      
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details3.html">تفاصيل النظام</a> </button>
+          </div>
+
+         <!--  <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap text-center bg-white">
+              <img src="assets/img/portfolio/الفنادق.png" style="background-color:white;width: 16rem;
+              padding: 1rem;" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>الايواء السياحي</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/web1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details2.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details2.html">تفاصيل النظام</a> </button>
+
+          </div> -->
+
+          
+
+        
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap text-center bg-white">
+              <img src="assets/img/portfolio/هيئة النقل.png" style="background-color:white" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>نظام النقل</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/web2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 100%"><a class="text-white" href="portfolio-details1.html">تفاصيل النظام</a> </button>
+
+          </div> -->
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/groups_3_white_36dp.svg" class="testimonial-img" alt="">
+                <h3>كوادر وطنية مدربة </h3>
+               
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/حلول تقنية متميزة.png" class="testimonial-img" alt="">
+                <h3>حلول تقنية متميزة </h3>
+               
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/update_white_36dp.svg" class="testimonial-img" alt="">
+                <h3>مراقبة وتحديثات مستمرة </h3>              
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/خبرة عميقة في  الحلول التقنية.png" class="testimonial-img" alt="">
+                <h3>  خبرة عميقة في الحلول التقنية </h3>              
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
     
-  </body>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title rtl">
+          <h2>للتواصل</h2>
+          <p> تواصل معنا</p>
+        </div>
+
+        
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4" style="order:2">
+            <div class="info">
+              <div class="address flex">
+                <div class=" rtl" style="margin-right: 1rem;"> <h4>الموقع:</h4>
+                  <p> اليمن - حضرموت - سيئون</p>
+                </div>
+                <i class="bi bi-geo-alt"></i>
+              </div>
+              <div class="email flex">
+                <div class=" rtl" style="margin-right: 1rem;"> <h4>الايميل:</h4>
+                  <p> info@alatiqa.com</p>
+                </div>
+                <i class="bi bi-envelope"></i>
+              </div>
+              <div class="phone flex">
+                <div class=" rtl" style="margin-right: 1rem;"> <h4>الاتصال:</h4>
+                  <p> 774220772 967+ </p>
+                  <p> 715991480 967+</p>
+                </div>
+                <i class="bi bi-phone"></i>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control rtl" id="name" placeholder="الاسم " required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control rtl" name="email" id="email" placeholder="الايميل" required>
+                </div>
+              </div>
+              <div class="form-group mt-3"> 
+                <input type="text" class="form-control rtl" name="subject" id="subject" placeholder="العنوان" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control rtl" name="message" rows="5" placeholder="الرسالة" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">ارسال رسالة </button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
