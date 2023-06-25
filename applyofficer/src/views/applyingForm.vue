@@ -7,12 +7,20 @@
     {{ msgQuery }}
   </div>
 </div>
-                <img style="position: absolute;
-    width: 99%;
+<div style="width: 100%;
+    position: fixed;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;">
+                <img style="
+    width: 80%;
     z-index: -1;
     opacity: 0.1;
-    top: 50%;" src="../assets/logoo.jpg" alt="" width="200">
-
+    " src="../assets/logoo.jpg" alt="" width="200">
+</div>
     <div class="container my-4">
         <div style=" display: flex;
     justify-content: space-between;
@@ -28,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <h3 class="text-center mt-3" >تقديم طلب تجنيد</h3 >
+        <h3 class="text-center mt-3" style="color: #f58484;">تقديم طلب الإلتحاق</h3 >
         <form @submit.prevent="submit" >
             <div class="col-11 mt-5">
                         <BaseInput 
@@ -68,7 +76,7 @@
                         />
                         <SelectInput 
                         v-model="formdata.Status_Ind"
-                        label="حالة البطاقة "
+                        label=" نوع الهوية "
                         :error="err.Status_Ind"
                         :list="[{id:1,name:'جواز سفر'},{id:2,name:'بطاقة شخصية'},{id:3,name:' غير معرف'}]"
                         required
@@ -107,7 +115,7 @@
                         />
                         <SelectInput 
                         v-model="formdata.singl"
-                        label=" الاشارة "
+                        label="إشارة الفصيلة "
                         :error="err.singl"
                         :list="[{id:1,name:'+'},{id:2,name:'-'}]"
                         required
@@ -179,16 +187,18 @@
 import BaseInput from '../components/BaseInput.vue';
 import SelectInput from '../components/BaseSelectInput.vue';
 import FileInput from '../components/BaseFileInput.vue';
-import { ref,onMounted } from 'vue';
+import { ref,watchEffect } from 'vue';
 import {usePostMultipart} from '../composables/usePostMultipart'
 import {useGet} from '../composables/useGet'
 import looading from '../components/looading.vue'
-onMounted(async ()=>{
+const gov = ref(1)
+watchEffect(async ()=>{
+    console.log(gov.value)
     const govss = await useGet('provinec/')
   govs.value = govss.awaitdata.value
     const {awaitdata,awaiterror} = await useGet('directorate/?provinec='+gov.value)
   directorates.value = awaitdata.value
-console.log(directorates.value)
+console.log(directorates.value,gov.value)
 })
 const formdata = ref({
     first_name: '',
@@ -231,7 +241,6 @@ const err = ref({
 })
 const directorates = ref(null)
 const govs = ref(null)
-const gov = ref(1)
 const filevalue = (file)=>{
             formdata.value.imge = file;
                           }   
