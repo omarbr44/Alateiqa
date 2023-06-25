@@ -19,8 +19,13 @@
     align-items: center;" class="flex jusify-content-center" >
             <img src="../assets/logoo.jpg" alt="" width="200">
             <div class="text-center">
-                <img src="../assets/logo1.jpg" alt="" width="100">
-                <img src="../assets/logo2.jpg" alt="" width="120">
+                <div>
+                    <img src="../assets/logo3.png" alt="" width="150">
+                </div>
+                <div>
+                    <img src="../assets/logo1.jpg" alt="" width="100">
+                    <img src="../assets/logo2.jpg" alt="" width="120">
+                </div>
             </div>
         </div>
         <h3 class="text-center mt-3" >تقديم طلب تجنيد</h3 >
@@ -136,7 +141,7 @@
                             :error="err.phone_1"
                         />
                         <SelectInput 
-                        v-model="formdata.gov"
+                        v-model="gov"
                         label="  المحافظة "
                         :error="err.gov"
                         :list="govs"
@@ -181,9 +186,9 @@ import looading from '../components/looading.vue'
 onMounted(async ()=>{
     const govss = await useGet('provinec/')
   govs.value = govss.awaitdata.value
-    const {awaitdata,awaiterror} = await useGet('directorate/')
+    const {awaitdata,awaiterror} = await useGet('directorate/?provinec='+gov.value)
   directorates.value = awaitdata.value
-
+console.log(directorates.value)
 })
 const formdata = ref({
     first_name: '',
@@ -203,7 +208,6 @@ const formdata = ref({
     phone: '+967',
     phone_1:'',
     directorate:'',
-    gov:'',
 })
 const err = ref({
     first_name: null,
@@ -227,6 +231,7 @@ const err = ref({
 })
 const directorates = ref(null)
 const govs = ref(null)
+const gov = ref(1)
 const filevalue = (file)=>{
             formdata.value.imge = file;
                           }   
