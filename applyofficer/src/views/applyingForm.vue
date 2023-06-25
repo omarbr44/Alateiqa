@@ -172,7 +172,7 @@
         <div style=" display: flex;
     justify-content: space-between;
     align-items: center;" class="flex jusify-content-center">
-            <h5 style="opacity: 0.4;">خدمة نجد وطن</h5>
+            <h5 style="opacity: 0.5;  color: #2d74ff;">خدمة نجد وطن</h5>
             <div class="mt-3" style="direction: rtl;">
                 <p>للتواصل والأستفسار مع إدارة الأمن: </p>
                 <p>هاتف : 05405670</p>
