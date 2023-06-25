@@ -1,5 +1,5 @@
 <template>
-    <div class="mb-3 input-in-con"  >      
+    <div class="mb-3 input-in-con"  style="direction: rtl;">      
                             <div v-if="error">
                             <div class="alert alert-danger" role="alert">{{ error }}</div>
                             </div>

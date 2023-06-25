@@ -14,7 +14,9 @@
     top: 50%;" src="../assets/logoo.jpg" alt="" width="200">
 
     <div class="container my-4">
-        <div class="flex jusify-content-center" >
+        <div style=" display: flex;
+    justify-content: space-between;
+    align-items: center;" class="flex jusify-content-center" >
             <img src="../assets/logoo.jpg" alt="" width="200">
             <div class="text-center">
                 <img src="../assets/logo1.jpg" alt="" width="100">
@@ -145,7 +147,9 @@
                         
             </div>
         </form>
-        <div class="flex jusify-content-center">
+        <div style=" display: flex;
+    justify-content: space-between;
+    align-items: center;" class="flex jusify-content-center">
             <h5 style="opacity: 0.4;">خدمة نجد وطن</h5>
             <div class="mt-3" style="direction: rtl;">
                 <p>للتواصل والأستفسار مع إدارة الأمن: </p>
@@ -254,7 +258,7 @@ const {awaitdata,awaiterror,loading} = await usePostMultipart("jobcreate",formda
 }
 </script>
 
-<style scoped>
+<style >
 .mb-3,.input-in-con,h1{
     direction: rtl;
 }
